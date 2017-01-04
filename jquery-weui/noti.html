@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery WeUI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.0/style/weui.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.0.0-rc.1/css/jquery-weui.css">
+    <link rel="stylesheet" href="http://jqweui.com/dist/demos/css/demos.css">
+</head>
+<body ontouchstart>
+<header class='demos-header'>
+    <h1 class="demos-title">Notification</h1>
+</header>
+
+<div class='demos-content-padded'>
+    <a href="javascript:;" id='show-notification' class="weui-btn weui-btn_primary">显示通知</a>
+</div>
+<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.0.0-rc.1/js/jquery-weui.js"></script>
+<script>
+    $(document).on("click", "#show-notification", function () {
+        $.noti({
+            title: "中奖啦！",
+            text: "点击领取腾讯撸啊撸杯二等奖！",
+            media: "<img src='http://jqweui.com/dist/demos/images/present.png' />",
+            data: {
+                message: "逗你玩的!"
+            },
+            time: 3000,
+            onClick: function (data) {
+                $.alert(data.message);
+            }
+        });
+    });
+</script>
+</body>
+</html>

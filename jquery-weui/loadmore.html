@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery WeUI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.0/style/weui.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.0.0-rc.1/css/jquery-weui.css">
+    <link rel="stylesheet" href="http://jqweui.com/dist/demos/css/demos.css">
+</head>
+<body ontouchstart>
+<header class='demos-header'>
+    <h1 class="demos-title">Loadmore</h1>
+</header>
+<div class='demos-content-padded'>
+    <div class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+    <div class="weui-loadmore weui-loadmore_line">
+        <span class="weui-loadmore__tips">暂无数据</span>
+    </div>
+    <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
+        <span class="weui-loadmore__tips"></span>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.0.0-rc.1/js/jquery-weui.js"></script>
+</body>
+</html>
